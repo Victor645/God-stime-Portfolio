@@ -14,7 +14,7 @@ export default function Hero() {
              I’m passionate about blending design and code to create interfaces that feel intuitive and enjoyable. With a strong focus on React, JavaScript, Tailwind CSS, HTML, and Git, I enjoy turning 
              ideas into digital experiences that leave a lasting impression.
 </p>
-        <button className="resume-button">Resume</button>
+        <a href="https://docs.google.com/document/d/1BE1qej1qQAOVNoB_g7O2DXhWdvSo-GDcfntDpb5uCSg/edit?usp=sharing" className="resume-button">Resume</a>
             </div>
         </div>
     );

@@ -376,6 +376,11 @@ text-decoration: none;
     z-index: 1000;
   }
 
+  /* When menu is active, slide it in */
+  .nav-links.active {
+    left: 0;
+  }
+
   .nav-links a {
     font-size: 1.2rem;
     padding: 1rem;

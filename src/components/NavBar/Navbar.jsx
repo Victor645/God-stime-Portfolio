@@ -11,7 +11,7 @@ export default function Navbar() {
         <nav className="navbar">
             <div className="logo"><p>Twitch</p></div>
                 
-            <div className="hamburger" onClick={toggleMenu}>
+            <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu} aria-expanded={isOpen} role="button">
                 <span></span>
                 <span></span>
                 <span></span>

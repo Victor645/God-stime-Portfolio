@@ -1,27 +1,11 @@
-import { useEffect, useRef } from "react";
 import Navbar from "../NavBar/Navbar";
 
 export default function Hero() {
-    const imgRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const el = imgRef.current;
-            if (!el) return;
-            const scrolled = window.scrollY;
-            const move = scrolled * 0.15; // parallax strength
-            el.style.transform = `translateY(${move}px)`;
-        };
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
         <div className="hero-section" id="home">
             <Navbar />
             <div className="hero-content">
-        <img ref={imgRef} src="./assets/images/Personal.png" alt="Image" className="hero-image"/>
+        <img src="./assets/images/profileimage.jpg" alt="Image" className="hero-image"/>
         <p className="hero-intro">Hi, my name is</p>
         <h1 className="hero-name">God'stime Ige</h1>
         {/* <p className="hero-role">I'm a Frontend Developer.</p> */}
